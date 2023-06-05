@@ -1,12 +1,11 @@
 import reactLogo from "../assets/react.svg"
+
 const Navbar = () =>{
     return (
         <nav className="navbar">
-            <h1>
-                <img src={reactLogo} alt={''}/>
-                React Shopping List
-                <img src={reactLogo} alt={''}/>
-            </h1>
+            <img src={reactLogo} alt={''}/>
+            <div>React Shopping List</div>
+            <img src={reactLogo} alt={''}/>
         </nav>
     )
 }
