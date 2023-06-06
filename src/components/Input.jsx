@@ -1,6 +1,7 @@
 // import {items} from "../data.js"
 
 const Input = () => {
+     const shoppingList= []
     const handleSubmit =(e)=>{
         // Handles data ourselves
         e.preventDefault()
@@ -15,16 +16,24 @@ const Input = () => {
 
             // attempt
 
-            // const newItem={
-            //     id: 1,
-            //     name: enteredItem
-            // }
+
+            const newItem={
+                id: shoppingList.length + 1,
+                name: enteredItem
+            }
+            shoppingList.push(newItem)
             // console.log(newItem)
+
+            console.log(shoppingList)
 
             // Clears the searchbar
             e.target.item.value = ''
+
+            // const {items, setItem} =
+
         }
     }
+
 
     return (
         <>

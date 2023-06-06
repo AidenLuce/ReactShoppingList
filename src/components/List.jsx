@@ -1,4 +1,5 @@
 import {shoppingList} from '../data.js'
+
 import {useState} from "react";
 const List = () => {
     const [items, setItem] = useState(shoppingList);

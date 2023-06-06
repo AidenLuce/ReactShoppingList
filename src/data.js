@@ -9,3 +9,4 @@ export const shoppingList =[
         name: 'Apple'
     }
 ]
+export const emptyArray= []
