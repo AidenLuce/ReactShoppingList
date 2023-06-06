@@ -1,6 +1,11 @@
-export const item = [
+import Input from './components/Input.jsx'
+export const shoppingList =[
     {
-        id: "",
-        item: ""
+        id:1,
+        name: 'Banana'
+    },
+    {
+        id:2,
+        name: 'Apple'
     }
-];
+]

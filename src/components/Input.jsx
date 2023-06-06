@@ -1,7 +1,6 @@
+// import {items} from "../data.js"
+
 const Input = () => {
-
-
-
     const handleSubmit =(e)=>{
         // Handles data ourselves
         e.preventDefault()
@@ -13,6 +12,14 @@ const Input = () => {
         }else{
             // Sanity check
             console.log('submitted ' + "\"" + enteredItem + "\"")
+
+            // attempt
+
+            // const newItem={
+            //     id: 1,
+            //     name: enteredItem
+            // }
+            // console.log(newItem)
 
             // Clears the searchbar
             e.target.item.value = ''
