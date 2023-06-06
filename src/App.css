@@ -46,7 +46,7 @@ body{
     justify-content: center;
     height: 3rem;
 }
-.input-container textarea{
+.input-container input{
     width: 40rem;
     font-size: 2.5rem;
 }
