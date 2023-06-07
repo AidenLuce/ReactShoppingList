@@ -1,11 +1,20 @@
 import {useState} from "react";
 
-const Form = () => {
+// destructuring addItem
+const Form = ({addItem}) => {
     const [newItemName, setNewItemName] = useState('')
 
     const handleSubmit = (e) =>{
+        //handles data ourselves
         e.preventDefault()
-        console.log(newItemName)
+        // checks to see it a new value was entered
+        if(!newItemName) return;
+        // Calls on the addItem function passed down from App.jsx
+        addItem(newItemName)
+        // resets the input
+        setNewItemName('')
+
+
     }
     return <form onSubmit={handleSubmit}>
         <h4> Grocery Bud</h4>
