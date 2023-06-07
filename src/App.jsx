@@ -1,8 +1,8 @@
 import {useState} from "react";
 
-import Form from "./Form.jsx";
-
 import "./App.css"
+import Form from "./Form.jsx";
+import Items from "./Items.jsx";
 
 const App = () =>{
     // Setting Default useState to an empty array
@@ -13,7 +13,6 @@ const App = () =>{
         const newItem = {
             id: items.length+1, //Date.now()
             name: itemName,
-            completed: false,
         }
         // used spread to get all previous values and add newItem to array
         setItems([...items, newItem])
@@ -25,6 +24,8 @@ const App = () =>{
     return <section className="section-center">
         {/* passing addItem down to Form*/}
         <Form addItem={addItem}/>
+        {/* passing items array down to Items*/}
+        <Items items={items}/>
     </section>
 }
 
