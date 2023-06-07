@@ -1,83 +1,8 @@
-:root{
-    --gray: #333;
-    --teal: #048c7f;
-    --white: #fff;
-    --yellow: #fbb124;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: var(--gray);
-    height: 200%;
-}
-
-/*=============================*/
-/*           NAVBAR            */
-/*=============================*/
-
-.navbar{
-    display: flex;
-    position: fixed;
-    background-color: var(--teal);
-    height: 5rem;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: var(--white);
-    border-bottom-right-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-}
-.navbar div{
-    margin: 0 3rem;
-}
-.navbar img{
-    height: 4rem;
-    width: auto;
-}
-
-/*=============================*/
-/*           INPUT             */
-/*=============================*/
-.nav-buffer{
-    height: 10rem;
-}
-.input-container{
+.section-center{
     display: flex;
     justify-content: center;
-    height: 3rem;
-}
-.input-container input{
-    width: 40rem;
-    font-size: 2.5rem;
-}
-.input-container button{
-    width: 10rem;
-    font-size: 2rem;
-
-}
-.listItem{
-    font-size: 10rem;
 }
 
-/*=============================*/
-/*            FORM             */
-/*=============================*/
-.form-container{
-    display: flex;
-    justify-content: center;
-    margin: 3rem;
-
-}
-.form{
-    font-size: 2rem;
-    padding: .5rem;
-    background-color: white;
-    width: 40rem;
-}
 
 
 
