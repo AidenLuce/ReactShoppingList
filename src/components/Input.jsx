@@ -1,7 +1,10 @@
-// import {items} from "../data.js"
-
+import {shoppingList} from "../data.js"
+// import List from "./List.jsx";
 const Input = () => {
-     const shoppingList= []
+
+     // const shoppingList= []
+
+
     const handleSubmit =(e)=>{
         // Handles data ourselves
         e.preventDefault()
@@ -16,7 +19,6 @@ const Input = () => {
 
             // attempt
 
-
             const newItem={
                 id: shoppingList.length + 1,
                 name: enteredItem
@@ -25,11 +27,14 @@ const Input = () => {
             // console.log(newItem)
 
             console.log(shoppingList)
+            // const {items, setItem} = useState(shoppingList);
+
 
             // Clears the searchbar
             e.target.item.value = ''
-
-            // const {items, setItem} =
+            return (
+                <h2>{shoppingList}</h2>
+            )
 
         }
     }
