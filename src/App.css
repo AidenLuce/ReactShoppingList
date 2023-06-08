@@ -1,7 +1,50 @@
-.section-center{
+:root{
+    --grey: #333;
+    --dark: #025043;
+    --medium: #048c7f;
+    --light: #b3e0dc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--grey);
+    color: var(--light);
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* =================================== */
+/*               NAVBAR                */
+/* =================================== */
+.nav{
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--medium);
+    height: 5rem;
+    border: solid var(--dark) .25rem;
+    border-top: 0;
+    border-bottom-right-radius: 50rem;
+    border-bottom-left-radius: 50rem;
 }
+.nav img{
+    margin: 0 2rem;
+    height: 3rem;
+    width: auto;
+}
+.nav h1{
+    font-size: 4rem;
+}
+
+
 
 
 
