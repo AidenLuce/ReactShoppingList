@@ -2,7 +2,7 @@ import SingleItem from "./SingleItem.jsx";
 
 // grabbing items array  and removeItem function from App.jsx
 const Items = (items) =>{
-    // console.log(items)
+    console.log(items)
     return<div className="items">
 
         {/* THIS IS THE PROBLEM*/}

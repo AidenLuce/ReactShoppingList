@@ -16,7 +16,6 @@ const App = () =>{
         }
         // used spread to get all previous values and add newItem to array
         setItems([...items, newItem])
-
     }
 
 
