@@ -14,7 +14,6 @@ const Form = ({addItem}) => {
         // resets the input
         setNewItemName('')
 
-
     }
     return <form onSubmit={handleSubmit}>
         <h4> Grocery Bud</h4>

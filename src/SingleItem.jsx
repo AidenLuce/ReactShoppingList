@@ -1,7 +1,7 @@
-const SingleItem = ({itemName}) =>{
+const SingleItem = ({item}) =>{
     return (
         <div className="single-item">
-            <p>{itemName}</p>
+            <p>{item.name}</p>
         </div>
     )
 }
