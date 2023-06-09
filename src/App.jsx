@@ -1,6 +1,8 @@
 import {useState} from "react";
 
 import "./App.css"
+
+import Nav from "./Nav.jsx";
 import Form from "./Form.jsx";
 import Items from "./Items.jsx";
 
@@ -20,10 +22,12 @@ const App = () =>{
 
 
 
-    return <section className="section-center">
-        {/* passing addItem down to Form*/}
+    return <section className='page-wrapper'>
+        {/* Just for looks */}
+        <Nav/>
+        {/* passing addItem down to Form.jsx*/}
         <Form addItem={addItem}/>
-        {/* passing items array down to Items*/}
+        {/* passing items array down to Items.jsx*/}
         <Items items={items}/>
     </section>
 }
