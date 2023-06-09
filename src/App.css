@@ -1,4 +1,5 @@
 :root{
+    --the-best-color: #dfff00;
     --grey: #333;
     --dark: #025043;
     --medium: #048c7f;
@@ -11,7 +12,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--grey);
+    background-color: var(--the-best-color);
     color: var(--light);
 }
 
@@ -111,11 +112,3 @@ form button{
     width: .1rem;
     height: 2rem;
 }
-
-
-
-
-
-
-
-

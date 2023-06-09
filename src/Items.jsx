@@ -4,14 +4,11 @@ import SingleItem from "./SingleItem.jsx";
 const Items = ({items}) =>{
     return(
     <div className="items">
-
-        {/* THIS IS THE PROBLEM*/}
-        {/* trying to iterate over items array but it messes up the whole application*/}
+        {/* Iterating over items array (contains item objects) */}
         {items.map((item)=>{
             return <SingleItem key={item.id}/*iterator*/ item={item}/*Passes Item object*//>
         })}
     </div>
     )
-
 }
 export default Items
