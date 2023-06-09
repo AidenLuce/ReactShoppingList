@@ -1,7 +1,8 @@
 const SingleItem = ({item}) =>{
     return (
-        <div className="single-item">
-            <p>{item.name}</p>
+        <div >
+            <p className="single-item"><span className="red-line"></span>{item.name}</p>
+            <div className="blue-line"></div>
         </div>
     )
 }
