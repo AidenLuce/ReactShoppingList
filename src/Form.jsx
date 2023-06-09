@@ -16,12 +16,11 @@ const Form = ({addItem}) => {
 
     }
     return <form onSubmit={handleSubmit}>
-        <h4> Grocery Bud</h4>
         <div className="form-control">
             <input
                 type="text"
-                className="form-input"
                 value={newItemName}
+                placeholder="Bananas"
                 // After every change, sets new name by targeting the value equal to newItemName
                 onChange={(event)=> setNewItemName(event.target.value)}
             />

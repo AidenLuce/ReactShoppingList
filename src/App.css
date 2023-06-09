@@ -30,10 +30,12 @@ body{
     align-items: center;
     background-color: var(--medium);
     height: 5rem;
+    width: 100%;
     border: solid var(--dark) .25rem;
     border-top: 0;
     border-bottom-right-radius: 50rem;
     border-bottom-left-radius: 50rem;
+    position: fixed;
 }
 .nav img{
     margin: 0 2rem;
@@ -43,7 +45,39 @@ body{
 .nav h1{
     font-size: 4rem;
 }
+.nav-buffer{
+    height: 5rem;
+}
 
+
+
+/* =================================== */
+/*                FORM                 */
+/* =================================== */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+form input {
+    height: 3rem;
+    width: 40rem;
+    padding: 0 1rem;
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+form button{
+    height: 3rem;
+    width: 10rem;
+    font-size: 2rem;
+    background-color: var(--dark);
+    color: var(--light);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 
 
 
