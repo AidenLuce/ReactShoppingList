@@ -3,6 +3,7 @@ import {useState} from "react";
 // destructuring addItem
 const Form = ({addItem}) => {
     const [newItemName, setNewItemName] = useState('')
+    // used to update value onChange
 
     const handleSubmit = (e) =>{
         //handles data ourselves
@@ -11,6 +12,8 @@ const Form = ({addItem}) => {
         if(!newItemName) return;
         // Calls on the addItem function passed down from App.jsx
         addItem(newItemName)
+        console.log(newItemName)
+
         // resets the input
         setNewItemName('')
 
@@ -24,7 +27,7 @@ const Form = ({addItem}) => {
                 // After every change, sets new name by targeting the value equal to newItemName
                 onChange={(event)=> setNewItemName(event.target.value)}
             />
-            <button type="submit">Add Item</button>
+            <button type="submit" className="btn">Add Item</button>
         </div>
     </form>
 
