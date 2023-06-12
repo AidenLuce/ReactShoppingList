@@ -27,7 +27,7 @@ const Form = ({addItem}) => {
                 // After every change, sets new name by targeting the value equal to newItemName
                 onChange={(event)=> setNewItemName(event.target.value)}
             />
-            <button type="submit">Add Item</button>
+            <button type="submit" className="btn">Add Item</button>
         </div>
     </form>
 

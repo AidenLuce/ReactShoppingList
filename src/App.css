@@ -76,12 +76,13 @@ form button{
     height: 3rem;
     width: 10rem;
     font-size: 2rem;
-    background-color: var(--dark);
-    color: var(--light);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
-
+.btn{
+    background-color: var(--dark);
+    color: var(--light);
+}
 
 
 /* =================================== */
@@ -95,13 +96,18 @@ form button{
 }
 .single-item{
     display: flex;
-    flex-direction: column;
-    padding: 0 5rem;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    padding: 0 0 0 5rem;
     background-color: #FFF;
     color: #333333;
     width: 45rem;
     font-size: 1.75rem;
 }
+.single-item button{
+    padding: 0 .5rem;
+}
+
 .blue-line{
     height: .1rem;
     background-color: var(--light);
