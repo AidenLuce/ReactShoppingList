@@ -80,7 +80,7 @@ form button{
     border-bottom-right-radius: 1rem;
 }
 .btn{
-    background-color: var(--dark);
+    background-color: var(--medium);
     color: var(--light);
 }
 
@@ -106,6 +106,16 @@ form button{
 }
 .single-item button{
     padding: 0 .5rem;
+}
+
+.clearItems{
+    margin-top: 3rem;
+    padding: .5rem;
+    font-size: 1.75rem;
+    width: 15rem;
+    border-radius: 1rem;
+
+
 }
 
 .blue-line{

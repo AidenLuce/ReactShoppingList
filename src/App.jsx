@@ -14,7 +14,7 @@ const App = () =>{
     const addItem = (itemName) =>{
 //    constructing new Item object
         const newItem = {
-            id: items.length+1, //Date.now()
+            id: Date.now(), // items.length + 1,
             name: itemName,
         }
         // used spread to get all previous values and add newItem to array
