@@ -1,17 +1,17 @@
 :root{
-    --bg: #28a99e;
-    --txt: #28a99e;
-    --header-txt: #28a99e;
-    --header-bg: #b3e0dc;
-    --header-brdr: #fff;
-    --input-bg: #fff;
-    --input-txt: #28a99e;
-    --item-btn: #048c7f;
-    --item-btn-txt: #b3e0dc;
-    --item-bg: #fff;
-    --item-txt: #333;
-    --vert-line: #ff4747;
-    --hor-line: #b3e0dc;
+    /*--bg: #28a99e;*/
+    /*--txt: #28a99e;*/
+    /*--header-txt: #28a99e;*/
+    /*--header-bg: #b3e0dc;*/
+    /*--header-brdr: #fff;*/
+    /*--input-bg: #fff;*/
+    /*--input-txt: #28a99e;*/
+    /*--item-btn: #048c7f;*/
+    /*--item-btn-txt: #b3e0dc;*/
+    /*--item-bg: #fff;*/
+    /*--item-txt: #333;*/
+    /*--vert-line: #ff4747;*/
+    /*--hor-line: #b3e0dc;*/
 }
 .light-theme{
     --bg: #28a99e;
@@ -86,7 +86,10 @@ body{
     font-size: 4rem;
 }
 .nav-buffer{
-    height: 5rem;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -97,7 +100,7 @@ body{
 form {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 form input {
     height: 3rem;

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 import "./App.css"
 
@@ -9,6 +9,18 @@ import Items from "./Items.jsx";
 const App = () =>{
     // Setting Default useState to an empty array
     const [items, setItems] = useState([])
+    const [theme,setTheme] = useState('light-theme')
+    useEffect(()=>{
+        document.documentElement.className = theme
+    },[theme])
+    const toggleTheme = () =>{
+        if (theme === 'light-theme'){
+            setTheme('dark-theme')
+        } else{
+            setTheme('light-theme')
+        }
+    }
+
     console.log(items)
 
     const addItem = (itemName) =>{
@@ -38,7 +50,7 @@ const App = () =>{
 
     return <section className='page-wrapper'>
         {/* Just for looks */}
-        <Nav/>
+        <Nav toggleTheme={toggleTheme}/>
         {/* passing addItem and removeItem to Form.jsx*/}
         <Form addItem={addItem}/>
         {/* passing items(object) array and clearItems down to Items.jsx*/}
