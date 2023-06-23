@@ -1,5 +1,7 @@
 const SingleItem = ({item, removeItem}) =>{
     const {name, id} = item;
+
+
     return (
         <div >
             <p className="single-item">

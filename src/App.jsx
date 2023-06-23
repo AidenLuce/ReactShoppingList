@@ -7,12 +7,15 @@ import Form from "./Form.jsx";
 import Items from "./Items.jsx";
 
 const App = () =>{
-    // Setting Default useState to an empty array
-    const [items, setItems] = useState([])
-    const [theme,setTheme] = useState('light-theme')
-    useEffect(()=>{
-        document.documentElement.className = theme
-    },[theme])
+    // theme
+    const getStorageTheme = () => {
+        let theme = 'light-theme';
+        if(localStorage.getItem('theme')){
+            theme = localStorage.getItem('theme')
+        }
+        return theme
+    }
+    const [theme,setTheme] = useState(getStorageTheme())
     const toggleTheme = () =>{
         if (theme === 'light-theme'){
             setTheme('dark-theme')
@@ -20,8 +23,14 @@ const App = () =>{
             setTheme('light-theme')
         }
     }
+    useEffect(()=>{
+        document.documentElement.className = theme
+        localStorage.setItem('theme', theme)
+    },[theme])
 
-    console.log(items)
+
+    // Setting Default useState to an empty array
+    const [items, setItems] = useState([])
 
     const addItem = (itemName) =>{
 //    constructing new Item object
