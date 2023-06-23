@@ -7,16 +7,22 @@ import Form from "./Form.jsx";
 import Items from "./Items.jsx";
 
 const getLocalStorage=()=>{
+    // gets items using "list" key saved in local storage
     let list = localStorage.getItem('list')
+    //checks if list exists (prevents an error where it tries to parse null)
     if(list){
+        // Parses string back to its original form (object)
         list = JSON.parse(localStorage.getItem('list'))
     } else {
+        // gets rid of null values by making it an empty array
         list = []
     }
+    // Returns the list of items grabbed from the local storage
     return list
 }
 
 const setLocalStorage=(items)=>{
+    //converts object into string then saves to local storage
     localStorage.setItem('list', JSON.stringify(items))
 }
 
@@ -38,38 +44,26 @@ const App = () =>{
         }
     }
     useEffect(()=>{
+        // gives the application its theme
         document.documentElement.className = theme
+        //saves the theme to local storage
         localStorage.setItem('theme', theme)
+        // only runs when theme value is changed
     },[theme])
 
-    // Setting Default useState to an empty array
+    // Setting Default useState to list of items held in the local storage
     const [items, setItems] = useState(getLocalStorage())
-
-
-
-    // const getStorageItems=()=>{
-    //     let items = []
-    //     if(localStorage.getItem('items')){
-    //         items = JSON.parse(localStorage.getItem(items))
-    //     }
-    //     return items
-    // }
-    // const [items, setItems] = useState(getStorageItems())
-    //
-    // useEffect(()=>{
-    //     localStorage.setItem('items', JSON.stringify(items))
-    // },[items])
-
-
     const addItem = (itemName) =>{
 //    constructing new Item object
         const newItem = {
             id: Date.now(), // items.length + 1,
             name: itemName,
         }
+        // used spread to get all previous values and add newItem to array, prevents repeat code
         const newItems = [...items, newItem]
-        // used spread to get all previous values and add newItem to array
+        // adds item to list
         setItems(newItems)
+        //saves new item to local storage
         setLocalStorage(newItems)
     }
 
@@ -80,12 +74,14 @@ const App = () =>{
         const filteredList = items.filter((item)=> item.id !== id)
         // sets items equal to the filtered array (with the item being removed).
         setItems(filteredList)
+        // saves filtered list to local storage
         setLocalStorage(filteredList)
     }
 
     const clearItems=()=>{
         // resets items to an empty array
         setItems([])
+        // empties items in local storage
         setLocalStorage([])
     }
 
