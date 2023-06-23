@@ -1,6 +1,7 @@
 import logo from "../src/assets/react.svg"
+import {useState} from "react";
 
-const Nav = ({toggleTheme}) =>{
+const Nav = ({toggleTheme, getStorageTheme}) =>{
 
     return(
         <>
