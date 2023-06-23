@@ -88,7 +88,7 @@ const App = () =>{
 
     return <section className='page-wrapper'>
         {/* Just for looks */}
-        <Nav toggleTheme={toggleTheme}/>
+        <Nav toggleTheme={toggleTheme} getStorageTheme={getStorageTheme}/>
         {/* passing addItem and removeItem to Form.jsx*/}
         <Form addItem={addItem}/>
         {/* passing items(object) array and clearItems down to Items.jsx*/}
