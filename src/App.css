@@ -1,17 +1,5 @@
 :root{
-    /*--bg: #28a99e;*/
-    /*--txt: #28a99e;*/
-    /*--header-txt: #28a99e;*/
-    /*--header-bg: #b3e0dc;*/
-    /*--header-brdr: #fff;*/
-    /*--input-bg: #fff;*/
-    /*--input-txt: #28a99e;*/
-    /*--item-btn: #048c7f;*/
-    /*--item-btn-txt: #b3e0dc;*/
-    /*--item-bg: #fff;*/
-    /*--item-txt: #333;*/
-    /*--vert-line: #ff4747;*/
-    /*--hor-line: #b3e0dc;*/
+
 }
 .light-theme{
     --bg: #28a99e;
