@@ -1,10 +1,47 @@
 :root{
-    --the-best-color: #dfff00;
-    --grey: #333;
-    --dark: #025043;
-    --medium: #048c7f;
-    --light: #b3e0dc;
-    --red: #ff4747
+    /*--bg: #28a99e;*/
+    /*--txt: #28a99e;*/
+    /*--header-txt: #28a99e;*/
+    /*--header-bg: #b3e0dc;*/
+    /*--header-brdr: #fff;*/
+    /*--input-bg: #fff;*/
+    /*--input-txt: #28a99e;*/
+    /*--item-btn: #048c7f;*/
+    /*--item-btn-txt: #b3e0dc;*/
+    /*--item-bg: #fff;*/
+    /*--item-txt: #333;*/
+    /*--vert-line: #ff4747;*/
+    /*--hor-line: #b3e0dc;*/
+}
+.light-theme{
+    --bg: #28a99e;
+    --txt: #28a99e;
+    --header-txt: #28a99e;
+    --header-bg: #b3e0dc;
+    --header-brdr: #fff;
+    --input-bg: #fff;
+    --input-txt: #28a99e;
+    --item-btn: #048c7f;
+    --item-btn-txt: #b3e0dc;
+    --item-bg: #fff;
+    --item-txt: #333;
+    --vert-line: #ff4747;
+    --hor-line: #b3e0dc;
+}
+.dark-theme{
+    --bg: #333;
+    --txt: #b3e0dc;
+    --header-txt: #b3e0dc;
+    --header-bg: #048c7f;
+    --header-brdr: #025043;
+    --input-bg: #b3e0dc;
+    --input-txt: #025043;
+    --item-btn: #048c7f;
+    --item-btn-txt: #b3e0dc;
+    --item-bg: #222;
+    --item-txt: #fff;
+    --vert-line: #878787;
+    --hor-line: #333;
 }
 *{
     margin: 0;
@@ -12,8 +49,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--grey);
-    color: var(--light);
+    background-color: var(--bg);
+    color: var(--txt);
 }
 
 .page-wrapper{
@@ -30,10 +67,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--medium);
+    background-color: var(--header-bg);
     height: 5rem;
     width: 100%;
-    border: solid var(--dark) .25rem;
+    border: solid var(--header-brdr) .25rem;
     border-top: 0;
     border-bottom-right-radius: 50rem;
     border-bottom-left-radius: 50rem;
@@ -49,7 +86,10 @@ body{
     font-size: 4rem;
 }
 .nav-buffer{
-    height: 5rem;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -60,14 +100,14 @@ body{
 form {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 form input {
     height: 3rem;
     width: 40rem;
     padding: 0 1rem;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--input-bg);
+    color: var(--input-txt);
     font-size: 2rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -80,8 +120,8 @@ form button{
     border-bottom-right-radius: 1rem;
 }
 .btn{
-    background-color: var(--medium);
-    color: var(--light);
+    background-color: var(--item-btn);
+    color: var(--item-btn-txt);
 }
 
 
@@ -99,8 +139,8 @@ form button{
     /*flex-direction: row;*/
     justify-content: space-between;
     padding: 0 0 0 5rem;
-    background-color: #FFF;
-    color: #333333;
+    background-color: var(--item-bg);
+    color: var(--item-txt);
     width: 45rem;
     font-size: 1.75rem;
 }
@@ -120,11 +160,11 @@ form button{
 
 .blue-line{
     height: .1rem;
-    background-color: var(--light);
+    background-color: var(--hor-line);
 }
 .red-line{
     position: absolute;
-    background-color: var(--red);
+    background-color: var(--vert-line);
     margin-left: -1rem;
     width: .1rem;
     height: 2rem;

@@ -1,6 +1,6 @@
 import logo from "../src/assets/react.svg"
 
-const Nav = () =>{
+const Nav = ({toggleTheme}) =>{
 
     return(
         <>
@@ -9,7 +9,9 @@ const Nav = () =>{
                 <h1>React Shopping list</h1>
                 <img src={logo} alt=''/>
             </header>
-            <div className="nav-buffer"></div>
+            <div className="nav-buffer">
+                <button className='theme-btn' onClick={toggleTheme}>click me</button>
+            </div>
         </>
 
     )
