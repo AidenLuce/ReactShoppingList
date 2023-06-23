@@ -8,7 +8,7 @@ const Items = ({items , removeItem, clearItems}) =>{
         {items.map((item)=>{
             return <SingleItem key={item.id}/*iterator*/ item={item}/*Passes Item object*/ removeItem={removeItem}/>
         })}
-        <button onClick={clearItems} className="btn clearItems">clearItems</button>
+        <button onClick={clearItems} className="btn clearItems"><h6>Clear Items</h6></button>
     </div>
     )
 }
