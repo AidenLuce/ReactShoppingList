@@ -7,6 +7,9 @@
     --header-txt: #28a99e;
     --header-bg: #b3e0dc;
     --header-brdr: #fff;
+    --theme-txt: #025043;
+    --theme-bg: #28a99e;
+    --theme-brdr: #025043;
     --input-bg: #fff;
     --input-txt: #28a99e;
     --item-btn: #048c7f;
@@ -22,10 +25,13 @@
     --header-txt: #b3e0dc;
     --header-bg: #048c7f;
     --header-brdr: #025043;
+    --theme-txt: #28a99e;
+    --theme-bg: #b3e0dc;
+    --theme-brdr: #fff;
     --input-bg: #b3e0dc;
     --input-txt: #025043;
-    --item-btn: #048c7f;
-    --item-btn-txt: #b3e0dc;
+    --item-btn: #28a99e;
+    --item-btn-txt: #025043;
     --item-bg: #222;
     --item-txt: #fff;
     --vert-line: #878787;
@@ -75,9 +81,13 @@ body{
 }
 .nav-buffer{
     height: 8rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+}
+.theme-btn{
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: var(--theme-txt);
+    background-color: var(--theme-bg);
+    border: solid var(--theme-brdr) .25rem;
 }
 
 
